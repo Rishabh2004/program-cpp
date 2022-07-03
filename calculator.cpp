@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -53,7 +54,7 @@ class calculator
       default: cout <<"Error! Enter correct operator";
          return;
 
-          cout <<"The result of the input is as given below :";
+          cout <<"The result of the input is as given below :" <<endl;
        if(myObj.num1>myObj.num2){
          cout << myObj.num1 << " " << myObj.op << " " << myObj.num2 <<" = " << myObj.ans;
         }
