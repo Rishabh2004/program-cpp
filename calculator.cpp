@@ -24,7 +24,7 @@ class calculator
         cin >> myObj.num1;
         cout <<"Enter number 2" << endl;
         cin >> myObj.num2;
-        cout <<"Enter an operator (+, -, *, /, %):" << endl;
+        cout <<"Enter an operator (+, -, *, /):" << endl;
         cin >> myObj.op;
 
         switch(myObj.op) {
@@ -51,17 +51,16 @@ class calculator
          }
             break;
 
-      default: cout <<"Error! Enter correct operator";
-         return;
+      default:  cout <<"Error! Enter correct operator";
 
-          cout <<"The result of the input is as given below :" <<endl;
-       if(myObj.num1>myObj.num2){
-         cout << myObj.num1 << " " << myObj.op << " " << myObj.num2 <<" = " << myObj.ans;
+   }
+        cout <<"The result of the input is as given below :" <<endl;
+        if(myObj.num1>myObj.num2){
+         cout << myObj.ans;
         }
          else{
-            cout << myObj.num2 << " " << myObj.op << " " << myObj.num1 << " = " << myObj.ans;
+            cout << myObj.ans;
         }
-   }
 
     return 0;
 }
