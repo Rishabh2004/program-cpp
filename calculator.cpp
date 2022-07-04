@@ -6,8 +6,8 @@ using namespace std;
 class calculator
 {
     public :
-     double num1;
-     double num2;
+     int num1;
+     int num2;
      double ans;
      char op; 
 };
@@ -24,7 +24,7 @@ class calculator
         cin >> myObj.num1;
         cout <<"Enter number 2" << endl;
         cin >> myObj.num2;
-        cout <<"Enter an operator (+, -, *, /):" << endl;
+        cout <<"Enter an operator (+, -, *, /, %):" << endl;
         cin >> myObj.op;
 
         switch(myObj.op) {
@@ -50,6 +50,15 @@ class calculator
             myObj.ans =myObj.num2 / myObj.num1;
          }
             break;
+         case '%':
+          if(myObj.num1>myObj.num2)
+         {
+            myObj.ans = myObj.num1 % myObj.num2;
+         } 
+         else {
+            myObj.ans =myObj.num2 % myObj.num1;
+         }
+         break;
 
       default:  cout <<"Error! Enter correct operator";
 
