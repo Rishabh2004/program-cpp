@@ -42,14 +42,17 @@ class calculator
          case '*': myObj.ans = myObj.num1 * myObj.num2;
             break;
          case '/':
-         if(myObj.num1>myObj.num2)
+        try
+        {
+          if(myObj.num1>myObj.num2)
          {
             myObj.ans = myObj.num1 / myObj.num2;
          } 
-         else{
-            myObj.ans =myObj.num2 / myObj.num1;
+         else {
+            throw "Math Error";
          }
-            break;
+         break;
+        }
          case '%':
           if(myObj.num1>myObj.num2)
          {
