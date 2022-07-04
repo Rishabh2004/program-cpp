@@ -42,17 +42,15 @@ class calculator
          case '*': myObj.ans = myObj.num1 * myObj.num2;
             break;
          case '/':
-        try
-        {
-          if(myObj.num1>myObj.num2)
+         if(myObj.num1>myObj.num2)
          {
-            myObj.ans = myObj.num1 / myObj.num2;
-         } 
-         else {
-            throw "Math Error";
+             myObj.ans = myObj.num1 / myObj.num2;
          }
-         break;
-        }
+         else {
+            cout <<"Maths Error";
+         }
+        break;
+
          case '%':
           if(myObj.num1>myObj.num2)
          {
