@@ -3,11 +3,7 @@
 
 using namespace std;
 
-class table
-{
-    public :
-     int num;
-};
+ int num;
 
 void table1()
 {
@@ -26,14 +22,13 @@ void table2()
         for(int i=1; i<=10; i++)
         {
             int tab = num*i;
-            cout << num <<" * " << i << " = " << tab;
+            cout << num <<" * " << i << " = " << tab << endl;
         }
     }
 }
 
 int main()
 {
-    table table1;
     table1();
     table2();
     return 0;
